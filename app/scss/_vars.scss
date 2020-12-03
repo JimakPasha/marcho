@@ -40,7 +40,8 @@ $bg: #f6f6f6;
   @return m#{i}n(#{$numbers});
 }
 
-%checkbox-hidden{
+%checkbox-hidden,
+%radio-hidden{
   width: 1px;
   height: 1px;
   overflow: hidden;
