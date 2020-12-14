@@ -1777,6 +1777,67 @@
   }
 }
 
+.blog-one{
+  h4{
+    color: $title;
+    font-size: 22px;
+    @extend %roboto-500;
+    margin: 25px 0;
+  }
+  p{
+    margin: 25px 0;
+  }
+  blockquote{
+    background-color: $bg;
+    border-left: 3px solid $accent;
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    margin: 25px 0;
+    padding: 35px;
+  }
+  &__left-img{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+   &__left-img{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+   }
+  &__text{
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+    margin-top: -1px;
+  }
+  &__info{
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__info-link{
+    margin-right: 30px;
+    padding-left: 28px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url(../images/icons/calendar.svg);
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__info-link--comment::before{
+    background-image: url(../images/icons/comment.svg);
+    top: 3px;
+  }
+  &__info-link--author::before{
+    background-image: url(../images/icons/user-blog.svg);
+  }
+}
 
 
 @import 'media';
