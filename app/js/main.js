@@ -117,4 +117,5 @@ $(function () {
   const deadline = $('.promo__clock').attr('data-time');
   initializeClock('promo__clock', deadline);
 
+
 });
