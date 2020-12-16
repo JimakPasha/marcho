@@ -1682,11 +1682,33 @@
       color: $accent;
     }
   }
-  .blog-box{
-    justify-content: start;
-    &__author{
-      margin-right: 30px;
+}
+
+.blog-wrapper{
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  &__author{
+    margin-right: 30px;
+  }
+  &__author,
+  &__data{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
     }
+  }
+  &__author::before{
+    background-image: url('../images/icons/user-gray.svg');
+  }
+  &__data::before{
+    background-image: url('../images/icons/time.svg');
   }
 }
 
