@@ -46,6 +46,13 @@
     width: 370px;
     margin-right: 30px;
   }
+  &__filter-btn{
+    display: none;
+  }
+  &__filter-btn-img{
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .filter{
